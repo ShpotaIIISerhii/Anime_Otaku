@@ -1,0 +1,119 @@
+/* Настройка шапки сайту */
+.header {
+    padding: 0; /* Відступи всередині елемента */
+    text-align: center; /* Вирівнювання тексту по центру */
+    border-radius: 50px; /* Радіус закруглення кутів */
+    width: 100%; /* Ширина елемента відносно вікна браузера */
+    margin-top: 0.5%; /* Відступ зверху */
+    margin-left: 0; /* Відступ зліва */
+    margin-right: 0; /* Відступ справа */
+    background: linear-gradient(to right, #020202 0%, #060606 10%, #9b1d44 45%, #9b1d44 55%, #060606 90%, #020202 100%); /* Градієнтний фон */
+}
+
+.header h1,
+.header p {
+    color: #fff; /* Колір тексту */
+}
+
+.header h1 {
+    margin: 0; /* Відступи від країв для заголовка */
+    font-size: 2.5%; /* Розмір шрифту заголовка */
+    color: #000; /* Колір тексту заголовка */
+}
+
+.header p {
+    margin: 1% 0 0 0; /* Відступи від країв для абзацу */
+    font-size: 1.2%; /* Розмір шрифту абзацу */
+    color: #000; /* Колір тексту абзацу */
+}
+
+body {
+    background-color: #191919; /* Колір фону для всього документа */
+    margin: 0; /* Відступи для тіла документа */
+    padding: 0; /* Відступи всередині тіла документа */
+    font-family: Arial, sans-serif; /* Шрифт тексту */
+}
+
+/* Настройка пошукового поля */
+.search-bar {
+    position: absolute; /* Абсолютне позиціонування */
+    top: 8%; /* Відстань від верхнього краю */
+    right: 19.5%; /* Відстань від правого краю */
+    transform: translateY(-50%); /* Вертикальне центрування */
+}
+
+.search-input {
+    float: right; /* Обтікання текстом з правого боку */
+    width: 170%; /* Ширина елемента відносно батьківського елемента */
+    margin-top: -1.5%; /* Відступ зверху */
+    position: relative; /* Відносне позиціонування */
+    display: inline-block; /* Виведення як блочний елемент */
+    padding-top: 5%; /* Відступи всередині елемента */
+    padding: 5%; /* Внутрішні відступи */
+    border-radius: 50px; /* Радіус закруглення кутів */
+    border-color: white; /* Колір рамки */
+    background-color: black; /* Колір фону */
+    border-width: 0.1%; /* Товщина рамки */
+    color: white; /* Колір тексту */
+}
+
+.search-input:focus {
+    outline: none; /* Зняття рамки при фокусі */
+}
+
+.search-input::placeholder {
+    color: #999; /* Колір тексту заповнювача */
+}
+
+/* Настройка значка лупи */
+.search-bar i {
+    position: absolute; /* Абсолютне позиціонування */
+    top: 20%; /* Відстань від верхнього краю */
+    right: 7%; /* Відстань від правого краю */
+    color: #ccc; /* Колір значка */
+    cursor: pointer; /* Курсор */
+    z-index: 1000; /* Зміщення відносно інших елементів */
+}
+
+.auth-container {
+    display: flex; /* Встановлення флексового контейнера */
+    justify-content: flex-end; /* Вирівнювання елементів по правому краю контейнера */
+    margin-top: -4.8%; /* Відстань зверху */
+}
+
+.register-button,
+.login-button {
+    padding: 1% 2%; /* Внутрішні відступи */
+    margin-left: 0.5%; /* Відступ між кнопками */
+    margin-right: 1%;
+    border: none; /* Відсутність рамки */
+    border-radius: 25px; /* Радіус закруглення кутів */
+    cursor: pointer; /* Курсор */
+    background-color: #A52A2A; /* Колір фону */
+    color: #fff; /* Колір тексту */
+}
+
+.register-button:hover,
+.login-button:hover {
+    background-color: #FF4500; /* Колір фону при наведенні */
+}
+
+
+
+
+/* Стилізація логотипа шапки */
+.logo {
+    width: 15%; /* Ширина */
+    height: auto; /* Автоматична висота */
+    margin-right: 1%; /* Відстань від правого краю */
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}

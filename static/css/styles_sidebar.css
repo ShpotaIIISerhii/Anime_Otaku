@@ -1,0 +1,33 @@
+.hamburger {
+  background-color: transparent; /* Прозорий фон */
+  border: none; /* Видалення рамки */
+  cursor: pointer; /* Зміна вигляду курсора при наведенні */
+  padding: 2%; /* Отступи */
+  position: absolute; /* Абсолютне позиціонування */
+  top: 0; /* Верхній відступ */
+  left: 0; /* Лівий відступ */
+}
+
+.hamburger:focus {
+  outline: none; /* Видалення фокусу */
+}
+
+.hamburger .fa-bars {
+  color: #333; /* Колір іконки гамбургера */
+  font-size: 3em; /* Розмір іконки відносно ширини вікна браузера */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -20%; /* Початкове значення для зсуву вліво, щоб приховати бічне меню */
+  width: 20%; /* Ширина бічного меню */
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease; /* Плавний перехід для анімації відкриття/закриття */
+  z-index: 1000;
+}
+
+.sidebar.active {
+  left: 0; /* Відкрити бокове меню, зсувши вліво на 0 */
+}
